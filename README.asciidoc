@@ -8,7 +8,7 @@ Documentation and specification for data collection from Twitter and Google
 
 - Running on fmedia12 (cron job)
 - Files stored in fmedia7 (`/scratch0/fmedia12_export/.../JSONstore`)
-- Folder size (as of Dec 2017): 428G 
+- Data stored on fmedia7 (as of Dec 2017): 428G 
 - Size of daily collection (lzo compressed): ~1G
 
 Example of data downloaded
@@ -138,3 +138,10 @@ Example of data downloaded
 }
 ]
 ```
+=== TwitterStream
+
+==== fluterms/fluwords
+- Running on fmedia15 (supervisord managed service)
+- Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
+- Data stored on fmedia7 (as of Dec 2017): 1.1T 
+- Size of daily collection (lzo compressed): ~1G

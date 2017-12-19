@@ -49,10 +49,8 @@ geofilter
 - Uses a list of location coordinates as a filter `-9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519`
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
-.Example response
-++++
 <script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
-++++
+
 
 sample
 ------

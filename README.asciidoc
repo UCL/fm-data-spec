@@ -11,8 +11,9 @@ Documentation and specification for data collection from Twitter and Google
 - Data stored on fmedia7 (as of Dec 2017): 428G 
 - Size of daily collection (lzo compressed): ~1G
 
-Example
-```json
+.Example response
+[source,json]
+---- 
  [
  {
    "retweeted":false,
@@ -137,29 +138,387 @@ Example
    }
 }
 ]
-```
+----
+
 === TwitterStream
 
-==== fluterms/fluwords
+- Collection of Python 2x apps using Tweepy v3.5 (http://tweepy.readthedocs.io/en/v3.5.0/[documentation])
 - Running on fmedia15 (supervisord managed service)
+- Stream saved to file every hour
+- Files moved to fmedia7 every hour (cron job)
+- Hourly files are lzo compressed every night (cron job)
+
+==== Applications
+
+===== fluterms/fluwords
+
 - Files stored locally and then moved to fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
 - Data stored on fmedia7 (as of Dec 2017): 1.1T 
 - Size of daily collection (lzo compressed): ~1G
 - Uses a list of 114 flu-related words in English and Danish as a filter
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
-==== geofilter
-- Running on fmedia15 (supervisord managed service)
+.Example response
+[source,json]
+----
+{
+    "contributors": null,
+    "coordinates": null,
+    "created_at": "Tue Dec 19 14:00:06 +0000 2017",
+    "display_text_range": [
+        0,
+        140
+    ],
+    "entities": {
+        "hashtags": [
+        ],
+        "symbols": [
+        ],
+        "urls": [
+            {
+                "display_url": "twitter.com/i/web/status/9…",
+                "expanded_url": "https://twitter.com/i/web/status/943118748717928449",
+                "indices": [
+                    117,
+                    140
+                ],
+                "url": "https://t.co/hZ6H57axcH"
+            }
+        ],
+        "user_mentions": [
+        ]
+    },
+    "extended_tweet": {
+        "display_text_range": [
+            0,
+            217
+        ],
+        "entities": {
+            "hashtags": [
+            ],
+            "media": [
+                {
+                    "display_url": "pic.twitter.com/tdTwQZTOy7",
+                    "expanded_url": "https://twitter.com/KNWAnews/status/943118748717928449/photo/1",
+                    "id": 943118727339561000,
+                    "id_str": "943118727339560962",
+                    "indices": [
+                        218,
+                        241
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/DRahfFQX0AIkfm1.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/DRahfFQX0AIkfm1.jpg",
+                    "sizes": {
+                        "large": {
+                            "h": 720,
+                            "resize": "fit",
+                            "w": 1280
+                        },
+                        "medium": {
+                            "h": 675,
+                            "resize": "fit",
+                            "w": 1200
+                        },
+                        "small": {
+                            "h": 383,
+                            "resize": "fit",
+                            "w": 680
+                        },
+                        "thumb": {
+                            "h": 150,
+                            "resize": "crop",
+                            "w": 150
+                        }
+                    },
+                    "type": "photo",
+                    "url": "https://t.co/tdTwQZTOy7"
+                }
+            ],
+            "symbols": [
+            ],
+            "urls": [
+                {
+                    "display_url": "bit.ly/2yTTosj?utm_me…",
+                    "expanded_url": "http://bit.ly/2yTTosj?utm_medium=social&utm_source=twitter_KNWAnews",
+                    "indices": [
+                        194,
+                        217
+                    ],
+                    "url": "https://t.co/dKWJobfcQM"
+                }
+            ],
+            "user_mentions": [
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "display_url": "pic.twitter.com/tdTwQZTOy7",
+                    "expanded_url": "https://twitter.com/KNWAnews/status/943118748717928449/photo/1",
+                    "id": 943118727339561000,
+                    "id_str": "943118727339560962",
+                    "indices": [
+                        218,
+                        241
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/DRahfFQX0AIkfm1.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/DRahfFQX0AIkfm1.jpg",
+                    "sizes": {
+                        "large": {
+                            "h": 720,
+                            "resize": "fit",
+                            "w": 1280
+                        },
+                        "medium": {
+                            "h": 675,
+                            "resize": "fit",
+                            "w": 1200
+                        },
+                        "small": {
+                            "h": 383,
+                            "resize": "fit",
+                            "w": 680
+                        },
+                        "thumb": {
+                            "h": 150,
+                            "resize": "crop",
+                            "w": 150
+                        }
+                    },
+                    "type": "photo",
+                    "url": "https://t.co/tdTwQZTOy7"
+                }
+            ]
+        },
+        "full_text": "As lawmakers reach the final week to decide year-end government funding, negotiations on saving the Deferred Action on Childhood Arrivals program are reaching a fever pitch despite long odds.  
+https://t.co/dKWJobfcQM https://t.co/tdTwQZTOy7"
+    },
+    "favorite_count": 0,
+    "favorited": false,
+    "filter_level": "low",
+    "geo": null,
+    "id": 943118748717928400,
+    "id_str": "943118748717928449",
+    "in_reply_to_screen_name": null,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "is_quote_status": false,
+    "lang": "en",
+    "place": null,
+    "possibly_sensitive": false,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "retweeted": false,
+    "source": "<a href=\"http://www.socialnewsdesk.com" rel="nofollow">SocialNewsDesk</a>",
+    "text": "As lawmakers reach the final week to decide year-end government funding, negotiations on saving the Deferred Action… https://t.co/hZ6H57axcH",
+    "timestamp_ms": "1513692006650",
+    "truncated": true,
+    "user": {
+        "contributors_enabled": false,
+        "created_at": "Mon Jan 25 17:34:33 +0000 2010",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "Your source for local news in Northwest Arkansas. Have a story? Email us: news@knwa.com #NWAnews Snapchat:knwanews",
+        "favourites_count": 2003,
+        "follow_request_sent": null,
+        "followers_count": 44843,
+        "following": null,
+        "friends_count": 1029,
+        "geo_enabled": true,
+        "id": 108352504,
+        "id_str": "108352504",
+        "is_translator": false,
+        "lang": "en",
+        "listed_count": 456,
+        "location": "Northwest Arkansas",
+        "name": "KNWA News",
+        "notifications": null,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000159870233/CYnVafLo.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000159870233/CYnVafLo.jpeg",
+        "profile_background_tile": false,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/108352504/1513380813",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/796449946908037121/mM4SNF_w_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/796449946908037121/mM4SNF_w_normal.jpg",
+        "profile_link_color": "1B95E0",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "KNWAnews",
+        "statuses_count": 62404,
+        "time_zone": "Mountain Time (US & Canada)",
+        "translator_type": "none",
+        "url": "http://www.nwahomepage.com",
+        "utc_offset": -25200,
+        "verified": true
+    }
+}
+----
+
+===== geofilter
+
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/geofilter`)
 - Data stored on fmedia7 (as of Dec 2017): 1.2T 
 - Size of daily collection (lzo compressed): ~250M
 - Uses a list of location coordinates as a filter `-9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519`
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
-==== sample
-- Running on fmedia15 (supervisord managed service)
+.Example response
+[source,json]
+----
+{
+    "contributors": null,
+    "coordinates": null,
+    "created_at": "Tue Dec 19 14:00:06 +0000 2017",
+    "display_text_range": [
+        21,
+        77
+    ],
+    "entities": {
+        "hashtags": [
+        ],
+        "symbols": [
+        ],
+        "urls": [
+        ],
+        "user_mentions": [
+            {
+                "id": 3993879857,
+                "id_str": "3993879857",
+                "indices": [
+                    0,
+                    11
+                ],
+                "name": "Just me by the sea",
+                "screen_name": "creoscribe"
+            },
+            {
+                "id": 17470629,
+                "id_str": "17470629",
+                "indices": [
+                    12,
+                    20
+                ],
+                "name": "ideapod",
+                "screen_name": "ideapod"
+            }
+        ]
+    },
+    "favorite_count": 0,
+    "favorited": false,
+    "filter_level": "low",
+    "geo": null,
+    "id": 943118750131413000,
+    "id_str": "943118750131412993",
+    "in_reply_to_screen_name": "creoscribe",
+    "in_reply_to_status_id": 943113740190437400,
+    "in_reply_to_status_id_str": "943113740190437376",
+    "in_reply_to_user_id": 3993879857,
+    "in_reply_to_user_id_str": "3993879857",
+    "is_quote_status": false,
+    "lang": "en",
+    "place": {
+        "attributes": {
+        },
+        "bounding_box": {
+            "coordinates": [
+                [
+                    [
+                        -1.556856,
+                        52.870587
+                    ],
+                    [
+                        -1.556856,
+                        52.960473
+                    ],
+                    [
+                        -1.384701,
+                        52.960473
+                    ],
+                    [
+                        -1.384701,
+                        52.870587
+                    ]
+                ]
+            ],
+            "type": "Polygon"
+        },
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "full_name": "Derby, England",
+        "id": "1f592b82aea688ff",
+        "name": "Derby",
+        "place_type": "city",
+        "url": "https://api.twitter.com/1.1/geo/id/1f592b82aea688ff.json"
+    },
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "retweeted": false,
+    "source": "<a href=\"http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+    "text": "@creoscribe @ideapod After 3 bottles of red wine crows feet become a blur ððð",
+    "timestamp_ms": "1513692006987",
+    "truncated": false,
+    "user": {
+        "contributors_enabled": false,
+        "created_at": "Fri Mar 13 16:52:06 +0000 2009",
+        "default_profile": false,
+        "default_profile_image": false,
+        "description": "Tall Chap who gets more than 5 a day. Eats well and gyms well. Big on Spain, Music and Cold Beers. And a good bop on the dance floor.",
+        "favourites_count": 38051,
+        "follow_request_sent": null,
+        "followers_count": 1157,
+        "following": null,
+        "friends_count": 791,
+        "geo_enabled": true,
+        "id": 24203853,
+        "id_str": "24203853",
+        "is_translator": false,
+        "lang": "en",
+        "listed_count": 48,
+        "location": "East Midlands, England",
+        "name": "Chris ",
+        "notifications": null,
+        "profile_background_color": "0099B9",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+        "profile_background_tile": true,
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/24203853/1513346025",
+        "profile_image_url": "http://pbs.twimg.com/profile_images/933051247858503680/40M640j__normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/933051247858503680/40M640j__normal.jpg",
+        "profile_link_color": "0099B9",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "95E8EC",
+        "profile_text_color": "3C3940",
+        "profile_use_background_image": true,
+        "protected": false,
+        "screen_name": "Chris_Alex",
+        "statuses_count": 82295,
+        "time_zone": "London",
+        "translator_type": "none",
+        "url": null,
+        "utc_offset": 0,
+        "verified": false
+    }
+}
+----
+
+===== sample
+
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/sample`)
 - Data stored on fmedia7 (as of Dec 2017): 1.8T 
 - Size of daily collection (lzo compressed): ~4G
 - Collects a small random sample of all public stata as provided by https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample[Twitter Streaming API]
 - Resource URL https://stream.twitter.com/1.1/statuses/sample.json
+
+
+[source,json]
+----
+include::https://gitlab.com/snippets/1689625/raw[]
+----
+

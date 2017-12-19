@@ -75,8 +75,10 @@ sample
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/sample`)
 - Data stored on fmedia7 (as of Dec 2017): 1.8T 
 - Size of daily collection (lzo compressed): ~4G
-- Collects a small random sample of all public stata as provided by https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample[Twitter Streaming API]
+- Collects a small random sample of all public stata as provided by `Twitter Streaming API`_
 - Resource URL https://stream.twitter.com/1.1/statuses/sample.json
+
+.. _Twitter Streaming API: https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample
 
 .. raw:: html 
 

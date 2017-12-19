@@ -4,9 +4,6 @@ data-collection-spec
 Documentation and specification for data collection from Twitter and
 Google
 
-Twitter
-#######
-
 TwitterGeoCrawler
 =================
 
@@ -29,11 +26,8 @@ TwitterStream
 - Files moved to fmedia7 every hour (cron job)
 - Hourly files are lzo compressed every night (cron job)
 
-Applications
-------------
-
 fluterms/fluwords
-^^^^^^^^^^^^^^^^^
+-----------------
 
 - Files stored locally and then moved to fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
 - Data stored on fmedia7 (as of Dec 2017): 1.1T 
@@ -47,7 +41,7 @@ test
 
 
 geofilter
-^^^^^^^^^
+---------
 
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/geofilter`)
 - Data stored on fmedia7 (as of Dec 2017): 1.2T 
@@ -61,7 +55,7 @@ geofilter
 ++++
 
 sample
-^^^^^^
+------
 
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/sample`)
 - Data stored on fmedia7 (as of Dec 2017): 1.8T 

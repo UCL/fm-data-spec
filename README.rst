@@ -12,15 +12,11 @@ TwitterGeoCrawler
 -  Data stored on fmedia7 (as of Dec 2017): 428G
 -  Size of daily collection (lzo compressed): ~1G
 
-::
-
-test
-
 
 TwitterStream
 =============
 
-- Collection of Python 2x apps using Tweepy v3.5 (http://tweepy.readthedocs.io/en/v3.5.0/[documentation])
+- Collection of Python 2x apps using Tweepy v3.5 (_documentation:http://tweepy.readthedocs.io/en/v3.5.0/ )
 - Running on fmedia15 (supervisord managed service)
 - Stream saved to file every hour
 - Files moved to fmedia7 every hour (cron job)
@@ -34,10 +30,6 @@ fluterms/fluwords
 - Size of daily collection (lzo compressed): ~1G
 - Uses a list of 114 flu-related words in English and Danish as a filter
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
-
-::
-
-test
 
 
 geofilter

@@ -16,7 +16,7 @@ TwitterGeoCrawler
 TwitterStream
 =============
 
-- Collection of Python 2x apps using Tweepy v3.5 (_documentation:http://tweepy.readthedocs.io/en/v3.5.0/ )
+- Collection of Python 2x apps using Tweepy v3.5 ( _documentation: http://tweepy.readthedocs.io/en/v3.5.0/ )
 - Running on fmedia15 (supervisord managed service)
 - Stream saved to file every hour
 - Files moved to fmedia7 every hour (cron job)

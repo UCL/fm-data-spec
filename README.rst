@@ -1,6 +1,8 @@
 data-collection-spec
 ====================
 
+|docs|
+
 Documentation and specification for data collection from Twitter and
 Google
 
@@ -16,11 +18,13 @@ TwitterGeoCrawler
 TwitterStream
 =============
 
-- Collection of Python 2x apps using Tweepy v3.5 ( _documentation: http://tweepy.readthedocs.io/en/v3.5.0/ )
+- Collection of Python 2x apps using Tweepy v3.5 (documentation_)
 - Running on fmedia15 (supervisord managed service)
 - Stream saved to file every hour
 - Files moved to fmedia7 every hour (cron job)
 - Hourly files are lzo compressed every night (cron job)
+
+.. _documentation: http://tweepy.readthedocs.io/en/v3.5.0/
 
 fluterms/fluwords
 -----------------
@@ -53,8 +57,6 @@ sample
 - Collects a small random sample of all public stata as provided by https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample[Twitter Streaming API]
 - Resource URL https://stream.twitter.com/1.1/statuses/sample.json
 
-
-
-
-
-`
+.. |docs| image:: https://readthedocs.org/projects/data-collection-spec/badge/?version=latest
+:target: http://data-collection-spec.readthedocs.io/en/latest/?badge=latest
+:alt: Documentation Status

@@ -15,6 +15,8 @@ TwitterGeoCrawler
 -  Data stored on fmedia7 (as of Dec 2017): 428G
 -  Size of daily collection (lzo compressed): ~1G
 
+::
+
 .Example response [source,json] —- [ { “retweeted”:false,
 “in_reply_to_screen_name”:null, “possibly_sensitive”:false,
 “truncated”:true, “lang”:“en”, “in_reply_to_status_id_str”:null,
@@ -129,7 +131,7 @@ from the Best in the World Buy and read it
    }
 }
 ]
-----
+
 
 TwitterStream
 =============
@@ -152,9 +154,11 @@ fluterms/fluwords
 - Uses a list of 114 flu-related words in English and Danish as a filter
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
+::
+
 .Example response
 [source,json]
-----
+
 {
     "contributors": null,
     "coordinates": null,
@@ -352,7 +356,7 @@ https://t.co/dKWJobfcQM https://t.co/tdTwQZTOy7"
         "verified": true
     }
 }
-----
+
 
 geofilter
 ^^^^^^^^^

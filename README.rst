@@ -1,11 +1,14 @@
-= data-collection-spec
+data-collection-spec
+====================
 
 Documentation and specification for data collection from Twitter and
 Google
 
-== Twitter
+Twitter
+#######
 
-=== TwitterGeoCrawler
+TwitterGeoCrawler
+=================
 
 -  Running on fmedia12 (cron job)
 -  Files stored in fmedia7 (``/scratch0/fmedia12_export/.../JSONstore``)
@@ -128,7 +131,8 @@ from the Best in the World Buy and read it
 ]
 ----
 
-=== TwitterStream
+TwitterStream
+=============
 
 - Collection of Python 2x apps using Tweepy v3.5 (http://tweepy.readthedocs.io/en/v3.5.0/[documentation])
 - Running on fmedia15 (supervisord managed service)
@@ -136,9 +140,11 @@ from the Best in the World Buy and read it
 - Files moved to fmedia7 every hour (cron job)
 - Hourly files are lzo compressed every night (cron job)
 
-==== Applications
+Applications
+------------
 
-===== fluterms/fluwords
+fluterms/fluwords
+^^^^^^^^^^^^^^^^^
 
 - Files stored locally and then moved to fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
 - Data stored on fmedia7 (as of Dec 2017): 1.1T 
@@ -348,7 +354,8 @@ https://t.co/dKWJobfcQM https://t.co/tdTwQZTOy7"
 }
 ----
 
-===== geofilter
+geofilter
+^^^^^^^^^
 
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/geofilter`)
 - Data stored on fmedia7 (as of Dec 2017): 1.2T 
@@ -361,7 +368,8 @@ https://t.co/dKWJobfcQM https://t.co/tdTwQZTOy7"
 <script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
 ++++
 
-===== sample
+sample
+^^^^^^
 
 - Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/sample`)
 - Data stored on fmedia7 (as of Dec 2017): 1.8T 

@@ -50,6 +50,10 @@ fluterms/fluwords
 - Uses a list of 114 flu-related words in English and Danish as a filter
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
+.. raw:: html
+
+  <script src="https://gist.github.com/david-guzman/522aa123de5cf52618fb0fa0a95f3659.js"></script>
+
 
 geofilter
 ---------
@@ -60,7 +64,9 @@ geofilter
 - Uses a list of location coordinates as a filter `-9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519`
 - Resource URL https://stream.twitter.com/1.1/statuses/filter.json
 
-<script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
+.. raw:: html 
+
+  <script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
 
 
 sample
@@ -72,6 +78,6 @@ sample
 - Collects a small random sample of all public stata as provided by https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample[Twitter Streaming API]
 - Resource URL https://stream.twitter.com/1.1/statuses/sample.json
 
-.. |docs| image:: https://readthedocs.org/projects/data-collection-spec/badge/?version=latest
-:target: http://data-collection-spec.readthedocs.io/en/latest/?badge=latest
-:alt: Documentation Status
+.. raw:: html 
+
+  <script src="https://gist.github.com/david-guzman/65d8c604b9b4f418d6d52051c3c9b905.js"></script>

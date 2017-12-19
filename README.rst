@@ -1,39 +1,27 @@
 = data-collection-spec
 
-Documentation and specification for data collection from Twitter and Google
+Documentation and specification for data collection from Twitter and
+Google
 
 == Twitter
 
 === TwitterGeoCrawler
 
-- Running on fmedia12 (cron job)
-- Files stored in fmedia7 (`/scratch0/fmedia12_export/.../JSONstore`)
-- Data stored on fmedia7 (as of Dec 2017): 428G 
-- Size of daily collection (lzo compressed): ~1G
+-  Running on fmedia12 (cron job)
+-  Files stored in fmedia7 (``/scratch0/fmedia12_export/.../JSONstore``)
+-  Data stored on fmedia7 (as of Dec 2017): 428G
+-  Size of daily collection (lzo compressed): ~1G
 
-.Example response
-[source,json]
----- 
- [
- {
-   "retweeted":false,
-   "in_reply_to_screen_name":null,
-   "possibly_sensitive":false,
-   "truncated":true,
-   "lang":"en",
-   "in_reply_to_status_id_str":null,
-   "id":942182749036797954,
-   "in_reply_to_user_id_str":null,
-   "in_reply_to_status_id":null,
-   "created_at":"Sun Dec 17 00:00:46 +0000 2017",
-   "favorite_count":0,
-   "place":null,
-   "coordinates":null,
-   "metadata":{
-      "result_type":"recent",
-      "iso_language_code":"en"
-   },
-   "text":"Tim Ferriss:Tribe of Mentors by @tferriss : Short Life Advice from the Best in the World Buy and read it ..\u2026 https://t.co/Q8G9kaiDdR",
+.Example response [source,json] —- [ { “retweeted”:false,
+“in_reply_to_screen_name”:null, “possibly_sensitive”:false,
+“truncated”:true, “lang”:“en”, “in_reply_to_status_id_str”:null,
+“id”:942182749036797954, “in_reply_to_user_id_str”:null,
+“in_reply_to_status_id”:null, “created_at”:“Sun Dec 17 00:00:46 +0000
+2017”, “favorite_count”:0, “place”:null, “coordinates”:null,
+“metadata”:{ “result_type”:“recent”, “iso_language_code”:“en” },
+“text”:“Tim Ferriss:Tribe of Mentors by @tferriss : Short Life Advice
+from the Best in the World Buy and read it
+..:raw-latex:`\u2026 https://t.co/Q8G9kaiDdR",
    "contributors":null,
    "geo":null,
    "entities":{
@@ -383,3 +371,6 @@ https://t.co/dKWJobfcQM https://t.co/tdTwQZTOy7"
 
 
 
+
+
+`

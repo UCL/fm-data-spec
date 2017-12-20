@@ -1,0 +1,56 @@
+= Issue with asciidoctor-maven-plugin
+ntfc
+:doctype: book
+:toc: left
+
+= Issue
+
+== Chapter
+
+[cols="2"]
+|===
+
+a|This cell is prefixed with an +a+ so the following list is rendered with the AsciiDoc list element styles.
+
+* List item 1
+* List item 2
+* List item 3
+|This cell *is not* prefixed with an +a+ so the following list is not rendered with the AsciiDoc list element styles.
+
+* List item 1
+* List item 2
+* List item 3
+
+a|This cell is prefixed with an +a+ so the following paragraph is rendered with the +lead+ style.
+
+[.lead]
+I am a paragraph styled with the lead attribute.
+|This cell *is not* prefixed with an +a+ so the following paragraph is not rendered with the +lead+ style.
+
+[.lead]
+I am a paragraph styled with the lead attribute.
+
+|===
+
+|===
+|Source Code 1 |Source Code 2
+
+a|
+[source,python]
+----
+import os
+print "%s" %(os.uname())
+----
+
+a|
+[source,python]
+----
+import os
+print ("%s" %(os.uname()))
+----
+|===
+
+
+++++
+<script src="https://gist.github.com/david-guzman/522aa123de5cf52618fb0fa0a95f3659.js"></script>
+++++

@@ -5,8 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
-<meta name="author" content="David Guzman">
-<title>Data collection from public APIs (FMS-001)</title>
+<title>sample</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -426,117 +425,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 </head>
-<body class="book toc2 toc-left">
+<body class="article">
 <div id="header">
-<h1>Data collection from public APIs (FMS-001)</h1>
-<div class="details">
-<span id="author" class="author">David Guzman</span><br>
-<span id="email" class="email"><a href="mailto:d.guzman@ucl.ac.uk">d.guzman@ucl.ac.uk</a></span><br>
-<span id="revnumber">version 1.0</span>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_twitter">Twitter</a>
-<ul class="sectlevel2">
-<li><a href="#_twittergeocrawler">TwitterGeoCrawler</a></li>
-<li><a href="#_twitterstream">TwitterStream</a></li>
-</ul>
-</li>
-</ul>
-</div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_twitter">Twitter</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_twittergeocrawler">TwitterGeoCrawler</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Running on fmedia12 (cron job)</p>
-</li>
-<li>
-<p>Files stored in fmedia7 (<code>/scratch0/fmedia12_export/&#8230;&#8203;/JSONstore</code>)</p>
-</li>
-<li>
-<p>Data stored on fmedia7 (as of Dec 2017): 428G</p>
-</li>
-<li>
-<p>Size of daily collection (lzo compressed): ~1G</p>
-</li>
-</ul>
-</div>
-<script src="https://gist.github.com/david-guzman/9294ca938055bb7bbf1357a897d2e549.js"></script>
-</div>
-<div class="sect2">
-<h3 id="_twitterstream">TwitterStream</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Collection of Python 2x apps using Tweepy v3.5 (<a href="http://tweepy.readthedocs.io/en/v3.5.0/">documentation</a>)</p>
-</li>
-<li>
-<p>Running on fmedia15 (supervisord managed service)</p>
-</li>
-<li>
-<p>Stream saved to file every hour</p>
-</li>
-<li>
-<p>Files moved to fmedia7 every hour (cron job)</p>
-</li>
-<li>
-<p>Hourly files are lzo compressed every night (cron job)</p>
-</li>
-</ul>
-</div>
-<div class="sect3">
-<h4 id="_fluterms_fluwords">fluterms/fluwords</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Files stored locally and then moved to fmedia7 (<code>/scratch0/fmedia12_export/&#8230;&#8203;/twitterStream/fluwords</code>)</p>
-</li>
-<li>
-<p>Data stored on fmedia7 (as of Dec 2017): 1.1T</p>
-</li>
-<li>
-<p>Size of daily collection (lzo compressed): ~1G</p>
-</li>
-<li>
-<p>Uses a list of 114 flu-related words in English and Danish as a filter</p>
-</li>
-<li>
-<p>Resource URL <a href="https://stream.twitter.com/1.1/statuses/filter.json" class="bare">https://stream.twitter.com/1.1/statuses/filter.json</a></p>
-</li>
-</ul>
-</div>
-<script src="https://gist.github.com/david-guzman/522aa123de5cf52618fb0fa0a95f3659.js"></script>
-</div>
-<div class="sect3">
-<h4 id="_geofilter">geofilter</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Files stored locally and then moved fmedia7 (<code>/scratch0/fmedia12_export/&#8230;&#8203;/twitterStream/geofilter</code>)</p>
-</li>
-<li>
-<p>Data stored on fmedia7 (as of Dec 2017): 1.2T</p>
-</li>
-<li>
-<p>Size of daily collection (lzo compressed): ~250M</p>
-</li>
-<li>
-<p>Uses a list of location coordinates as a filter -9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519</p>
-</li>
-<li>
-<p>Resource URL <a href="https://stream.twitter.com/1.1/statuses/filter.json" class="bare">https://stream.twitter.com/1.1/statuses/filter.json</a></p>
-</li>
-</ul>
-</div>
-<script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
-</div>
 <div class="sect3">
 <h4 id="_sample">sample</h4>
 <div class="ulist">
@@ -558,13 +450,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <script src="https://gist.github.com/david-guzman/65d8c604b9b4f418d6d52051c3c9b905.js"></script>
 </div>
 </div>
-</div>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0<br>
-Last updated 2017-12-20 16:19:01 GMT
+Last updated 2017-12-20 16:32:55 GMT
 </div>
 </div>
 </body>

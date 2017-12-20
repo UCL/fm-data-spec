@@ -1,0 +1,11 @@
+= fm-data-spec
+
+Documentation and specification for data collection from Twitter and Google
+
+URL: http://github-pages.ucl.ac.uk/fm-data-spec/
+
+== Build
+
+```
+mvn clean generate-resources
+```

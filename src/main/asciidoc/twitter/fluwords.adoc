@@ -1,0 +1,11 @@
+==== fluterms/fluwords
+
+* Files stored locally and then moved to fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
+* Data stored on fmedia7 (as of Dec 2017): 1.1T
+* Size of daily collection (lzo compressed): ~1G
+* Uses a list of 114 flu-related words in English and Danish as a filter
+* Resource URL https://stream.twitter.com/1.1/statuses/filter.json
+
+++++
+<script src="https://gist.github.com/david-guzman/522aa123de5cf52618fb0fa0a95f3659.js"></script>
+++++

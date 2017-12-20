@@ -1,13 +1,5 @@
-=== TwitterStream
-
 * Collection of Python 2x apps using Tweepy v3.5 (http://tweepy.readthedocs.io/en/v3.5.0/[documentation])
 * Running on fmedia15 (supervisord managed service)
 * Stream saved to file every hour
 * Files moved to fmedia7 every hour (cron job)
 * Hourly files are lzo compressed every night (cron job)
-
-include::{docdir}/twitter/fluwords.adoc[]
-
-include::{docdir}/twitter/geofilter.adoc[]
-
-include::{docdir}/twitter/sample.adoc[]

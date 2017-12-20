@@ -3,9 +3,26 @@ David Guzman <d.guzman@ucl.ac.uk>
 :revnumber: {project-version}
 :doctype: book
 :toc: left
+:toclevels: 4
 
-== Twitter
+= Twitter
+
+== TwitterGeoCrawler
 
 include::twitter/geocrawler.adoc[]
 
+== TwitterStream
+
 include::twitter/stream.adoc[]
+
+=== fluterms/fluwords
+
+include::twitter/fluwords.adoc[]
+
+=== geofilter
+
+include::twitter/geofilter.adoc[]
+
+=== sample
+
+include::twitter/sample.adoc[]

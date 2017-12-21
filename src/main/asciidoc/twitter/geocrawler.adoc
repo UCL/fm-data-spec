@@ -1,7 +1,9 @@
-*  Running on fmedia12 (cron job)
-*  Files stored in fmedia7 (`/scratch0/fmedia12_export/.../JSONstore`)
-*  Data stored on fmedia7 (as of Dec 2017): 428G
-*  Size of daily collection (lzo compressed): ~1G
+* Running on fmedia12 (cron job)
+* Files stored in fmedia7 (`/scratch0/fmedia12_export/.../JSONstore`)
+* Data stored on fmedia7 (as of Dec 2017): 428G
+* Size of daily collection (lzo compressed): ~1G
+* Uses Twitter Standard Search API (https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html[documentation])
+* Resource URL: `\https://api.twitter.com/1.1/search/tweets.json`
 
 ++++
 <script src="https://gist.github.com/david-guzman/9294ca938055bb7bbf1357a897d2e549.js"></script>

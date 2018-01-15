@@ -4,9 +4,14 @@
 * Collects a small random sample of all public stata as provided by https://developer.twitter.com/en/docs/tweets/sample-realtime/api-reference/get-statuses-sample[Twitter Streaming API]
 * Resource URL `\https://stream.twitter.com/1.1/statuses/sample.json`
 
+[IMPORTANT]
+====
+The sample endpoints of Twitter Streaming API is reported to be approximately 1% of public Tweet volumes at any time
+
+Ref: https://twittercommunity.com/t/potential-adjustments-to-streaming-api-sample-volumes/31628
+====
+
+*Example of JSON data retrieved by sample*
 ++++
-<p class="expand" id="expand-sample">Show example</p>
-<div class="expandable" id="expandable-sample">
 <script src="https://gist.github.com/david-guzman/65d8c604b9b4f418d6d52051c3c9b905.js"></script>
-</div>
 ++++

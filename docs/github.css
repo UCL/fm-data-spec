@@ -265,7 +265,7 @@ blockquote, blockquote p { line-height: 1.4; color: #666666; }
 table { background: white; margin-bottom: 1.33333em; border: solid 1px #dddddd; }
 table thead, table tfoot { background: whitesmoke; font-weight: bold; }
 table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td { padding: 0.53333em 0.66667em 0.66667em; font-size: 0.93333em; color: #222222; text-align: left; }
-table tr th, table tr td { padding: 0.6em 0.66667em; font-size: 0.8em; color: #222222; }
+table tr th, table tr td { padding: 0.6em 0.66667em; font-size: 1em; color: #222222; }
 table tr.even, table tr.alt, table tr:nth-of-type(even) { background: #f9f9f9; }
 table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { display: table-cell; line-height: 1.4; }
 

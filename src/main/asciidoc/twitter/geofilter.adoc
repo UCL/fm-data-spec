@@ -1,9 +1,31 @@
 * Files stored locally and then moved fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/geofilter`)
 * Data stored on fmedia7 (as of Dec 2017): 1.2T
 * Size of daily collection (lzo compressed): ~250M
-* Uses a list of location coordinates as a filter -9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519
 * Resource URL `\https://stream.twitter.com/1.1/statuses/filter.json`
 
+.Query parameters
+[horizontal]
+*locations*:: coordinates of 2 bounding boxes -9.23, 49.84, 2.69, 60.85, 8.075, 54.559, 15.193, 57.7519
+
+[IMPORTANT]
+====
+Please note that Twitter Streaming API combines multiple bounding boxes with the operator OR
+
+[verse]
+____
+Locations: A comma-separated list of longitude,latitude pairs specifying a set of bounding boxes to filter Tweets by. Only geolocated Tweets falling within the requested bounding boxes will be included—unlike the Search API, the user’s location field is not used to filter Tweets.
+
+Each bounding box should be specified as a pair of longitude and latitude pairs, with the southwest corner of the bounding box coming first. For example:
+
+-122.75, 36.8, -121.75, 37.8, -74,40, -73,41 	San Francisco OR New York City
+
+Bounding boxes do not act as filters for other filter parameters. For example track=twitter&locations=-122.75,36.8,-121.75,37.8 would match any Tweets containing the term Twitter (even non-geo Tweets) OR coming from the San Francisco area.
+____
+
+Ref: https://developer.twitter.com/en/docs/tweets/filter-realtime/guides/basic-stream-parameters
+====
+
+*Example of JSON data retrieved by geofilter*
 ++++
 <script src="https://gist.github.com/david-guzman/1174cf2904f040c36ea5ecc0cc9eeb1f.js"></script>
 ++++

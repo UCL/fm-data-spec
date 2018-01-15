@@ -7,91 +7,94 @@
 * Downloads data based on location. One request per location.
 
 .List of locations
-[%hardbreaks]
-Aberdeen
-Accrington Rossendale
-Ayr Prestwick
-Barnsley Dearne Valley
-Basildon
-Basingstoke
-Bedford
-Belfast Metropolitan
-Birkenhead
-Blackburn
-Blackpool
-Blantyre Hamilton
-Bournemouth_Poole
-Brighton and Hove
-Bristol
-Burnley
-Burton upon Trent
-Cambridge
-Cardiff
-Chelmsford
-Cheltenham
-Chesterfield
-Colchester
-Coventry
-Craigavon
-Crawley
-Derby
-Derry
-Doncaster
-Dundee
-Eastbourne
-East Kilbride
-Edinburgh
-Exeter
-Falkirk
-Farnborough Aldershot
-Gloucester
-Greater Glasgow
-Greater London
-Greater Manchester
-Greenock
-Grimsby
-Hastings
-High Wycombe
-Ipswich
-Kingston upon Hull
-Leicester
-Lincoln
-Liverpool
-Livingston
-Luton
-Maidstone
-Mansfield
-Medway Towns
-Milton Keynes
-Newport
-Northampton
-Norwich
-Nottingham
-Oxford
-Paignton Torquay
-Peterborough
-Plymouth
-Preston Central Lancashire
-Reading
-Sheffield
-Slough
-Southend on Sea
-South_Hampshire
-Stoke on Trent
-Sunderland Wearside
-Swansea
-Swindon
-Teesside
-Telford
-Thanet
-Tyneside
-Warrington
-West Midlands
-West Yorkshire
-Wigan
-Worcester
-York
-
+[options="header"]
+[%autowidth]
+|===
+| Location | A request every X minutes 
+| Aberdeen | 3
+| Accrington_Rossendale | 7
+| Ayr_Prestwick | 7
+| Barnsley_Dearne_Valley | 3
+| Basildon | 4
+| Basingstoke | 7
+| Bedford | 5
+| Belfast_Metropolitan | 1
+| Birkenhead | 2
+| Blackburn | 5
+| Blackpool | 3
+| Blantyre_Hamilton | 7
+| Bournemouth_Poole | 3
+| Brighton_and_Hove | 2
+| Bristol | 1
+| Burnley | 4
+| Burton_upon_Trent | 7
+| Cambridge | 2
+| Cardiff | 1
+| Chelmsford | 5
+| Cheltenham | 5
+| Chesterfield | 7
+| Colchester | 5
+| Coventry | 2
+| Craigavon | 7
+| Crawley | 5
+| Derby | 3
+| Derry | 7
+| Doncaster | 2
+| Dundee | 5
+| Eastbourne | 5
+| East_Kilbride | 7
+| Edinburgh | 1
+| Exeter | 5
+| Falkirk | 7
+| Farnborough_Aldershot | 4
+| Gloucester | 2
+| Greater_Glasgow | 1
+| Greater_London | 1
+| Greater_Manchester | 1
+| Greenock | 7
+| Grimsby | 7
+| Hastings | 7
+| High_Wycombe | 5
+| Ipswich | 4
+| Kingston_upon_Hull | 2
+| Leicester | 2
+| Lincoln | 7
+| Liverpool | 1
+| Livingston | 7
+| Luton | 4
+| Maidstone | 5
+| Mansfield | 5
+| Medway_Towns | 4
+| Milton_Keynes | 3
+| Newport | 4
+| Northampton | 4
+| Norwich | 2
+| Nottingham | 1
+| Oxford | 2
+| Paignton_Torquay | 7
+| Peterborough | 3
+| Plymouth | 4
+| Preston_Central_Lancashire | 3
+| Reading | 4
+| Sheffield | 1
+| Slough | 4
+| Southend_on_Sea | 4
+| South_Hampshire | 2
+| Stoke_on_Trent | 3
+| Sunderland_Wearside | 3
+| Swansea | 2
+| Swindon | 4
+| Teesside | 3
+| Telford | 7
+| Thanet | 5
+| Tyneside | 1
+| Warrington | 5
+| West_Midlands | 1
+| West_Yorkshire | 1
+| Wigan | 4
+| Worcester | 5
+| York | 2
+|===
 
 *Example of JSON data retrieved by TwitterGeoCrawler*
 ++++

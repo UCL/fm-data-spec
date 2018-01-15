@@ -1,8 +1,11 @@
 * Files stored locally and then moved to fmedia7 (`/scratch0/fmedia12_export/.../twitterStream/fluwords`)
 * Data stored on fmedia7 (as of Dec 2017): 1.1T
 * Size of daily collection (lzo compressed): ~1G
-* Uses a list of 114 flu-related words in English and Danish as a filter
 * Resource URL `\https://stream.twitter.com/1.1/statuses/filter.json`
+
+.Query parameters
+[horizontal]
+*q*:: 114 flu-related words in English and Danish as a filter
 
 .List of flu-related terms in English used in query
 [%hardbreaks]

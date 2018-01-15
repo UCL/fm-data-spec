@@ -3,3 +3,7 @@
 * Stream saved to file every hour
 * Files moved to fmedia7 every hour (cron job)
 * Hourly files are lzo compressed every night (cron job)
+
+[horizontal]
+*Source code*:: https://gitlab.com/ircflagship2/legacy/tree/master/fmedia15/twitter_stream
+

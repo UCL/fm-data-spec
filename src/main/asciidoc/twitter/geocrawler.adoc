@@ -1,10 +1,101 @@
-* Running on fmedia12 (cron job)
+* Java application (`TwitterGeoCrawler.jar`) managed by a cron job running on fmedia12
 * Files stored in fmedia7 (`/scratch0/fmedia12_export/.../JSONstore`)
 * Data stored on fmedia7 (as of Dec 2017): 428G
 * Size of daily collection (lzo compressed): ~1G
 * Uses Twitter Standard Search API (https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html[documentation])
 * Resource URL: `\https://api.twitter.com/1.1/search/tweets.json`
+* Downloads data on based location:
 
+.List of locations
+[%hardbreaks]
+Aberdeen
+Accrington Rossendale
+Ayr Prestwick
+Barnsley Dearne Valley
+Basildon
+Basingstoke
+Bedford
+Belfast Metropolitan
+Birkenhead
+Blackburn
+Blackpool
+Blantyre Hamilton
+Bournemouth_Poole
+Brighton and Hove
+Bristol
+Burnley
+Burton upon Trent
+Cambridge
+Cardiff
+Chelmsford
+Cheltenham
+Chesterfield
+Colchester
+Coventry
+Craigavon
+Crawley
+Derby
+Derry
+Doncaster
+Dundee
+Eastbourne
+East Kilbride
+Edinburgh
+Exeter
+Falkirk
+Farnborough Aldershot
+Gloucester
+Greater Glasgow
+Greater London
+Greater Manchester
+Greenock
+Grimsby
+Hastings
+High Wycombe
+Ipswich
+Kingston upon Hull
+Leicester
+Lincoln
+Liverpool
+Livingston
+Luton
+Maidstone
+Mansfield
+Medway Towns
+Milton Keynes
+Newport
+Northampton
+Norwich
+Nottingham
+Oxford
+Paignton Torquay
+Peterborough
+Plymouth
+Preston Central Lancashire
+Reading
+Sheffield
+Slough
+Southend on Sea
+South_Hampshire
+Stoke on Trent
+Sunderland Wearside
+Swansea
+Swindon
+Teesside
+Telford
+Thanet
+Tyneside
+Warrington
+West Midlands
+West Yorkshire
+Wigan
+Worcester
+York
+
+
+*Example of JSON data retrieved by TwitterGeoCrawler*
 ++++
 <script src="https://gist.github.com/david-guzman/9294ca938055bb7bbf1357a897d2e549.js"></script>
 ++++
+
+IMPORTANT: Documentation on business logic missing, especially on pagination of results

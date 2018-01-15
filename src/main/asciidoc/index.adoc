@@ -1,9 +1,12 @@
-= Data collection from public APIs (FMS-001)
+= Data collection from public APIs
 David Guzman <d.guzman@ucl.ac.uk>
 :revnumber: {project-version}
 :doctype: book
-:toc: left
+:toc: macro
+:toc-title: Contents
 :toclevels: 4
+
+toc::[]
 
 = Twitter
 

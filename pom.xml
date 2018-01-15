@@ -38,6 +38,7 @@
 	  <attributes>
 	    <project-version>${project.version}</project-version>
 	    <sectnums>true</sectnums>
+        <stylesheet>github.css</stylesheet>
 	  </attributes>
 	</configuration>
 	<executions>

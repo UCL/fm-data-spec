@@ -4,6 +4,127 @@
 * Uses a list of 114 flu-related words in English and Danish as a filter
 * Resource URL `\https://stream.twitter.com/1.1/statuses/filter.json`
 
+.List of flu-related terms in English used in query
+[%hardbreaks]
+aspirin
+apsirines
+aspirine
+aspirines
+blocked nose
+body ache
+body aches
+chills
+cough
+coughed
+coughing
+croup
+croups
+diarrhoea
+disease
+dizzy
+doctor
+fatigue
+fatigued
+fever
+flu
+general practitioner
+H1N1
+headache
+ill
+illness
+infected
+infection
+influenza
+medicine
+muscle ache
+muscle aches
+muscles ache
+nausea
+runny nose
+shiver
+shivering
+sick
+sneeze
+sneezed
+sneezing
+sore throat
+stomach ache
+stomach aches
+stuffy nose
+symptom
+symptoms
+thermometer
+temperature
+tonsil
+tonsils
+under the weather
+unwell
+vomit
+vomited
+vomiting
+
+.List of flu-related terms in Danish used in query
+[%hardbreaks]
+smerter
+ryg smerter
+ondt i ryggen
+blod
+katar
+forkølelse
+kolik
+koma
+hoste
+kramper
+croup
+strubehoste
+diarre
+puds
+betændelse
+svimmel
+svimmelhed
+besvime
+træt
+træthed
+føler sig syg
+har det dårligt
+har det skidt
+feber
+influenza
+gastroentiritis
+hovedpine
+infektion
+betændelse
+irritation
+muskel smerter
+muskel smerter
+kvalme
+smerte
+lungebetændelse
+snottet
+rystelser
+syg
+nyser
+nyser
+ondt i halsen
+halsbetændelse
+spasmer
+ondt i maven
+mavesmerter
+temperatur
+mandler
+opkast
+rygsmerter
+forkølet
+hoster
+krampe
+diarré
+udmattet, træt
+føler mig syg
+muskelsmerter
+udmattet
+træt
+
+*Example of JSON data retrieved by fluwords*
 ++++
 <script src="https://gist.github.com/david-guzman/522aa123de5cf52618fb0fa0a95f3659.js"></script>
 ++++

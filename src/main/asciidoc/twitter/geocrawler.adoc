@@ -4,7 +4,7 @@
 * Size of daily collection (lzo compressed): ~1G
 * Uses Twitter Standard Search API (https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets.html[documentation])
 * Resource URL: `\https://api.twitter.com/1.1/search/tweets.json`
-* Downloads data on based location:
+* Downloads data based on location. One request per location.
 
 .List of locations
 [%hardbreaks]
